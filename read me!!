@@ -1,0 +1,18 @@
+TO COMPILE USE  :
+
+
+	" nvcc myNavierStokesCUDASolver.cu  "
+
+
+Before compile export using  :
+
+	export PATH=/usr/local/cuda-5.5/bin:$PATH
+	export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
+
+
+
+IMP:
+
+	Do not use printf inside kernel function.
+	Use only float, double not supported.
+
